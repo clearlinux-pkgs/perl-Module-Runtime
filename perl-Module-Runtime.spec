@@ -4,7 +4,7 @@
 #
 Name     : perl-Module-Runtime
 Version  : 0.014
-Release  : 9
+Release  : 10
 URL      : http://search.cpan.org/CPAN/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.014.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.014.tar.gz
 Summary  : 'runtime module handling'
@@ -45,7 +45,7 @@ fi
 %check
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=intel.com,localhost
+export no_proxy=localhost
 make TEST_VERBOSE=1 test
 
 %install
@@ -62,7 +62,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.22.0/Module/Runtime.pm
+/usr/lib/perl5/site_perl/5.24.0/Module/Runtime.pm
 
 %files doc
 %defattr(-,root,root,-)

@@ -4,7 +4,7 @@
 #
 Name     : perl-Module-Runtime
 Version  : 0.015
-Release  : 13
+Release  : 14
 URL      : https://www.cpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.015.tar.gz
 Source0  : https://www.cpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.015.tar.gz
 Summary  : 'runtime module handling'
@@ -67,7 +67,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.26.0/Module/Runtime.pm
+/usr/lib/perl5/site_perl/5.26.1/Module/Runtime.pm
 
 %files doc
 %defattr(-,root,root,-)

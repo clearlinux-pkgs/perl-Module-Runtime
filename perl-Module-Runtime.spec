@@ -4,13 +4,13 @@
 #
 Name     : perl-Module-Runtime
 Version  : 0.016
-Release  : 17
-URL      : https://www.cpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz
-Source0  : https://www.cpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz
+Release  : 18
+URL      : https://cpan.metacpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz
 Summary  : 'runtime module handling'
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
-Requires: perl-Module-Runtime-doc
+Requires: perl-Module-Runtime-man
 BuildRequires : perl-Module-Build
 
 %description
@@ -22,12 +22,12 @@ Perl modules, which are normally handled at compile time.  This module
 avoids using any other modules, so that it can be used in low-level
 infrastructure.
 
-%package doc
-Summary: doc components for the perl-Module-Runtime package.
-Group: Documentation
+%package man
+Summary: man components for the perl-Module-Runtime package.
+Group: Default
 
-%description doc
-doc components for the perl-Module-Runtime package.
+%description man
+man components for the perl-Module-Runtime package.
 
 
 %prep
@@ -40,7 +40,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
 if test -f Makefile.PL; then
 %{__perl} Makefile.PL
-make V=1  %{?_smp_mflags}
+make  %{?_smp_mflags}
 else
 %{__perl} Build.PL
 ./Build
@@ -69,6 +69,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %defattr(-,root,root,-)
 /usr/lib/perl5/site_perl/5.26.1/Module/Runtime.pm
 
-%files doc
+%files man
 %defattr(-,root,root,-)
-%doc /usr/share/man/man3/*
+/usr/share/man/man3/Module::Runtime.3

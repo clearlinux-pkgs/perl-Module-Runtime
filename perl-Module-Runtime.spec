@@ -4,10 +4,10 @@
 #
 Name     : perl-Module-Runtime
 Version  : 0.016
-Release  : 27
+Release  : 28
 URL      : https://cpan.metacpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz
-Summary  : 'runtime module handling'
+Summary  : runtime module handling
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
 BuildRequires : buildreq-cpan
@@ -27,6 +27,7 @@ infrastructure.
 Summary: dev components for the perl-Module-Runtime package.
 Group: Development
 Provides: perl-Module-Runtime-devel = %{version}-%{release}
+Requires: perl-Module-Runtime = %{version}-%{release}
 
 %description dev
 dev components for the perl-Module-Runtime package.
@@ -69,7 +70,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.1/Module/Runtime.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Module/Runtime.pm
 
 %files dev
 %defattr(-,root,root,-)

@@ -4,7 +4,7 @@
 #
 Name     : perl-Module-Runtime
 Version  : 0.016
-Release  : 36
+Release  : 37
 URL      : https://cpan.metacpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz
 Summary  : 'runtime module handling'

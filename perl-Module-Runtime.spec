@@ -7,7 +7,7 @@
 #
 Name     : perl-Module-Runtime
 Version  : 0.018
-Release  : 45
+Release  : 46
 URL      : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Module-Runtime-0.018.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Module-Runtime-0.018.tar.gz
 Summary  : 'runtime module handling'
